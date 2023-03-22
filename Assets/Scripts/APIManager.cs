@@ -47,7 +47,7 @@ public class APIManager : MonoBehaviour
                 // Traitement du json
                 APIresponse apiResponse = JsonUtility.FromJson<APIresponse>(webRequest.downloadHandler.text);
 
-                // Affichage de la température sur le bouton
+                // Affichage de la température sur le bouton (par exemple)
                 buttonText.text = apiResponse.current_weather.temperature.ToString();
             }
         }
